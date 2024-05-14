@@ -1,0 +1,414 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #721640;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+section {
+    min-height: 100vh;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    color: #4a0928;
+}
+
+.bg-bottlegreen p, .bg-darkredwine p, .bg-lightbottlegreen p {
+    color: white;
+}
+
+#logo-top {
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    #logo-top {
+        width: 140px;
+    }
+}
+
+/* background colors */
+.bg-redwine {
+    background-color: #821A20;
+}
+
+.bg-darkredwine {
+    background-color: #721640;
+}
+
+.bg-lightredwine {
+    background-color: #d67aa1;
+}
+
+.bg-bottlegreen {
+    background-color: #344d3b;
+}
+
+.bg-lightbottlegreen {
+    background-color: #5b7a62;
+}
+
+.bg-cork {
+    background-color: #E8E0DB;
+}
+
+.bg-lightcork {
+    background-color: #c0b498;
+}
+
+.bg-lightgrey {
+    background-color: #dedede;
+}
+
+.bg-darkgrey {
+    background-color: #a3a2a2;
+}
+
+/* buttons */
+.btn-wine {
+    background-color: #540122;
+    color: white;
+    padding: 8px 20px;
+}
+
+.btn-wine:hover {
+    background-color: #540122;
+    color: #721640;
+}
+
+h1 {
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Shelby', cursive;
+    font-size: 5rem;
+    color: #344d3b;
+}
+
+.bg-darkredwine h2, .bg-lightbottlegreen h2 {
+    color: white;
+}
+
+h3 {
+    color: #4a0928;
+}
+
+.bg-bottlegreen h3, .bg-lightbottlegreen h3 {
+    color: white;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #4a0928;
+}
+
+.bg-bottlegreen h4, .bg-darkredwine h4, .bg-lightbottlegreen h4 {
+    color: white;
+}
+
+#top-banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.breaker {
+    background-image: url(../img/vinkloden_vinmark_simpel.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #dedede;
+    min-height: 100px;
+    background-position: bottom;
+}
+
+.fun-fact {
+    background-image: url(../img/vinkloden_toender.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#grow-1 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_left_start.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media screen and (max-width: 992px) {
+    #grow-1 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg), url(../img/vinkloden_lodret_streg-start.svg);
+        background-size: 10%;
+        background-repeat: repeat-y, no-repeat;
+        background-position: auto;
+    }
+}
+
+#harvest-2 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_right.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: left top, bottom;
+}
+
+@media screen and (max-width: 992px) {
+    #harvest-2 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+        background-size: 10%, contain;
+        background-repeat: repeat-y, no-repeat;
+        background-position: auto, bottom;
+    }
+}
+
+#fermentation-3 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_left_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media screen and (max-width: 992px) {
+    #fermentation-3 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg);
+        background-size: 10%;
+        background-repeat: repeat-y;
+        background-position: auto;
+    }
+}
+
+#press-4 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_right.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: left top, bottom;
+}
+
+@media screen and (max-width: 992px) {
+    #press-4 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+        background-size: 10%, contain;
+        background-repeat: repeat-y, no-repeat;
+        background-position: auto, bottom;
+    }
+}
+
+#aging-5 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_left_2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media screen and (max-width: 992px) {
+    #aging-5 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg);
+        background-size: 10%;
+        background-repeat: repeat-y;
+        background-position: auto;
+    }
+}
+
+#filtration-6 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_right.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: left top, bottom;
+}
+
+@media screen and (max-width: 992px) {
+    #filtration-6 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg), url(../img/vinkloden_vinmark_hoejre.svg);
+        background-size: 10%, contain;
+        background-repeat: repeat-y, no-repeat;
+        background-position: auto, bottom;
+    }
+}
+
+#bottling-7 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-streg_top_left_2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media screen and (max-width: 992px) {
+    #bottling-7 {
+        background-image: url(../img/vinkloden_lodret_streg-26.svg);
+        background-size: 10%;
+        background-repeat: repeat-y;
+        background-position: auto;
+    }
+}
+
+#picnic-8 {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/vinkloden-picnic.svg), url(../img/vinkloden-streg_top_right.svg);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: left bottom, left top;
+}
+
+@media screen and (max-width: 992px) {
+    #picnic-8 {
+        background-image: url(../img/vinkloden-picnic.svg), url(../img/vinkloden_lodret_streg-26.svg);
+        background-size: contain, 10%;
+        background-repeat: no-repeat, repeat-y;
+        background-position: left bottom, auto;
+    }
+}
+
+#top-banner-img {
+    min-height: 100px;
+    background-image: url(../img/top-view-delicious-organic-wine-grapes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cork-bg-img {
+    background-image: url(../img/vinkloden_korpropper_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vinmark {
+    background-image: url(../img/vinkloden_vinmark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#before {
+    background-image: url(../img/vinkloden_vinmark_simpel.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#wine-end-box {
+    background-image: url(../img/vinkloden_dug_breaker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#down-arrow-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    animation: updown 2s ease infinite;
+    font-size: 2rem;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .step img.step-img {
+        width: 40%;
+    }
+}
+
+.visme-graph {
+    flex: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .visme-graph {
+        flex: 100%;
+    }
+}
+
+.host-number {
+    font-family: 'Alex Brush', cursive;
+    font-size: 10rem;
+}
+
+.anchor {
+    scroll-margin-top: 70px;
+}
+
+.text-darkredwine {
+    color: #4a0928;
+    ;
+}
+
+.step-number-img {
+    text-align: center;
+    width: 200px;
+}
+
+.border-bottlegreen {
+    border: 4px solid #344d3b;
+    border-color: #344d3b;
+}
+
+footer {
+    min-height: 100px;
+    padding: 0;
+}
+
+footer ul, footer li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4a0928;
+}
